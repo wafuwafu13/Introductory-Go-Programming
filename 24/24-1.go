@@ -9,7 +9,7 @@ type martian struct{}
 
 type creater struct{}
 
-func (m martian) talk() string {
+func (m martian) talk() string { // martian型から呼ばないと反応しない
 	return "nack nack"
 }
 
@@ -24,7 +24,7 @@ type talker interface {
 }
 
 type starship struct {
-	laser // 型を埋め込む
+	laser // 型を埋め込む、talkメソッドが与えられる
 }
 
 func shout(t talker) {
