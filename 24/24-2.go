@@ -24,11 +24,12 @@ func stardate2(t stardater) float64 {
 
 type sol int
 
+// なかったらstardaterインターフェースの要件が満たされず、stardate2を呼び出せない
 func (s sol) YearDay() int {
 	return int (s % 668)
 }
 
-// なかったらstardaterインターフェースの要件が満たされない
+// なかったらstardaterインターフェースの要件が満たされず、stardate2を呼び出せない
 func (s sol) Hour() int {
 	return 0
 }
