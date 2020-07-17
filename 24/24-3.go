@@ -15,3 +15,7 @@ func main() {
 	// ある型がStringメソッドを提供するなら、Println, Sprintfなど一群の関数は、それを使うことができる
 	fmt.Println(curiosity) // -4.5895, 137.4417
 }
+
+// type Stringer interface {
+//     String() string
+// }
