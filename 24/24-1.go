@@ -19,6 +19,7 @@ func (l laser) talk() string {
 	return strings.Repeat("pew", int(l))
 }
 
+// 型が格納する値ではなく、型が何を行えるかに焦点を絞る
 type talker interface {
 	talk() string
 }
